@@ -256,4 +256,10 @@ footer{
         margin-left: 10%;
         padding-bottom: 20px;
     }
+    .navigation-items li{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 40px 5px 40px;
+        text-align: center;
+    }
 }
