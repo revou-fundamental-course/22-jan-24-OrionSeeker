@@ -3,25 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E Grocery</title>
+    <title>Groseria</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navigation-grocery">
-        <img src="your-logo.png" alt="logo" class="logo">
+        <img src="assets/logo.jpg" alt="logo" class="logo">
         <ul class="navigation-items">
-            <li>Home</li>
-            <li>Our Product</li>
-            <li>Contact Us</li>
+            <li class="box-header"><a href="#header-utama">Home</a></li>
+            <li class="box-header"><a href="#tengah-halaman">Our Package</a></li>
+            <li class="box-header"><a href="#akhir-halaman">Call Us</a></li>
 
         </ul>
     </nav>
-    <header>
-         <h1>Hello Welcome to E Grocery Site</h1>
-         <h4>This is for practice</h4>
-         <img src="assets/header.jpg" alt="header img">
+    <div class="pembatas-nav"></div>
+    <header id="header-utama">
+         <h1 class="judul">Toko Perbelanjaan Kebutuhan Harian Terlengkap di Indonesia</h1>
+         <p class="subjudul">Belanja Puas, Harga Pas</p>
     </header>
-    <div class="our-product">
+
+    <div class="pict-and-contact-us">
+        <div>
+            <img class = "gambar-belanjaan" src="assets/belanjaan.png" alt="belanjaan">
+            <img class = "gambar-belanjaan"src="assets/belanjaan2.jpg" alt="belanjaan2">
+            <img class = "gambar-belanjaan"src="assets/belanjaan3.jpeg" alt="belanjaan3">
+            <p>"Setiap hari beli sayur dan buah yang fresh di sini"</p>
+            <div class="pict-and-contact-us-content">
+                <div class="circle" style="background-image: url(assets/orang.jpg); margin-left: 10%;"></div>
+                <div>
+                    <b>Wahyuni</b><br>
+                    <label style="color: gray;">Seorang Mahasiswa, 20</label>
+                </div>
+            </div>
+            <div id="garis-tengah-tengah"></div>
+            <p style="max-width: 650px; margin-left: -3px; font-weight: bold; color:black; margin-bottom: 50px;">
+                Groseria adalah salah satu toko perbelanjaan kebutuhan harian terlengkap yang murah dan terpercaya.
+                Berikut ini alasan-alasan mengapa kamu harus belanja di Groseria...
+            </p>
+            <div class="why-groseria">
+                <div class="pict-and-contact-us-content">
+                    <div class="why-circle" style="background-image: url(assets/1.jpg);"></div>
+                    <div>
+                        <label class="label-why-groseria">Pelayanan maksimal dari staff kami</label>
+                    </div>
+                </div>
+                <div class="pict-and-contact-us-content">
+                    <div class="why-circle" style="background-image: url(assets/2.jpg);"></div>
+                    <div>
+                        <label class="label-why-groseria">Barang yang sangat lengkap</label>
+                    </div>
+                </div>
+                <div class="pict-and-contact-us-content">
+                    <div class="why-circle" style="background-image: url(assets/3.jpg);"></div>
+                    <div>
+                        <label class="label-why-groseria">Harga barang yang sangat murah dan ramah dompet</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <div class="contact-us-content">
+                <!-- <form method="post"> -->
+                    <p style="margin-left: -1px;">Sales akan menghubungi anda 1x24jam setelah data kami terima</p>
+                    <label for="in-name">Nama</label><br>
+                    <input type="text" id="in-name"><br>
+                    <label for="in-email">Alamat Email</label><br>
+                    <input type="email" id="in-email"><br>
+                    <label for="in-interest">Anda tertarik dengan apa</label><br>
+                    <select id="in-interest"> 
+                        <option value="">===pilih salah satu===</option>
+                        <option value="sayur">sayur</option>
+                        <option value="buah">buah</option>
+                    </select>
+                    <p id="error-message"></p>
+                    <input type="submit" id="submit-button" value="SEND">
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="tengah-halaman">
+        <h2>Our Package</h2>
+    </div>
+    <div class="package-satu">
+        <div class="package-satu-in">
+            <div class="why-circle" style="background-image: url(assets/wortel.png);"></div>
+                <!-- <div> -->
+                    <label class="package-atas">Sayuran segar</label><br>
+                    <p class="package-bawah">Sayur segar dari sumber pertanian terbaik yaitu perkebunan Indonesia</p>
+                <!-- </div> -->
+        </div>
+        <div class="package-satu-in">
+            <div class="why-circle" style="background-image: url(assets/tomat.jpg);"></div>
+                <!-- <div> -->
+                    <label class="package-atas">Buah-buahan segar</label><br>
+                    <p class="package-bawah">Buah dengan kualitas terbaik dari lokal atau import dan harga yang menarik</p>
+                <!-- </div> -->
+        </div>
+        <div class="package-satu-in">
+            <div class="why-circle" style="background-image: url(assets/paket.png);"></div>
+                <!-- <div> -->
+                    <label class="package-atas">Pengiriman Instan</label><br>
+                    <p class="package-bawah">Dikirim secara instan oleh kurir yang telah ditraining dengan SOP untuk menjaga kondisi belanjaanmu</p>
+                <!-- </div> -->
+        </div>
+    </div>
+    <div id="garis-tengah-package"></div>
+    <div class="package-satu">
+        <div class="package-satu-in">
+            <div class="why-circle" style="background-image: url(assets/bumbu.jpg);"></div>
+                <!-- <div> -->
+                    <label class="package-atas">Kebutuhan Dapur</label><br>
+                    <p class="package-bawah">Bumbu dapur lengkap untuk keperluan memasak kamu dalam membuat berbagai kreasi masakan istimewa</p>
+                <!-- </div> -->
+        </div>
+        <div class="package-satu-in">
+            <div class="why-circle" style="background-image: url(assets/kompor.png);"></div>
+                <!-- <div> -->
+                    <label class="package-atas">Set Dapur</label><br>
+                    <p class="package-bawah">Segala jenis alat masak untuk membantu kamu memasak di rumah seperti seorang chef profesional</p>
+                <!-- </div> -->
+        </div>
+        <div class="package-satu-in">
+            <div class="why-circle" style="background-image: url(assets/kotak.jpg);"></div>
+                <!-- <div> -->
+                    <label class="package-atas">Set Komplit</label><br>
+                    <p class="package-bawah">Bingung mau masak apa? Sudah tersedia paket untuk kamu masak di dapurmu</p>
+                <!-- </div> -->
+        </div>
+    </div>
+    <div style="padding: 50px;"></div>
+    <div class="penutup">
+        <h2 id="akhir-halaman">Ingin Bertanya Lebih Lanjut?</h2>
+        <p>Anda dapat menghubungi kami dengan menekan tombol di bawah ini. Customer service kami akan senang hati menjawab pertanyaan anda </p>
+        <button>CALL US</button>
+    </div>
+
+    <!-- <div class="our-product">
         <div>
             <div class="circle" style="background-image: url(assets/header.jpg);"></div>
             <p>Terdiri dari sayuran dan buahan</p>
@@ -34,16 +153,23 @@
             <div class="circle"></div>
             <p>Terdiri dari sayuran dan buahan</p>
         </div>
-    </div>
+    </div> -->
 
-    <div class="inquiry-customer">
+    <!-- <div class="inquiry-customer">
         <form class="inquiry-form">
             <label for="name">Name</label>
             <input type="text" id="name">
         </form>
         <div class="output">
-            <!-- put your output in here -->
+            //put your output here
         </div>
-    </div>
+    </div> -->
+    <script src="js/script.js"></script>
 </body>
+<footer>
+    <br>
+    <div id="pembatas-footer"></div>
+    Made by OrionSeeker<br>
+    For RevoU Software Engineering Fundamental Course Batch 22-Jan-2024
+</footer>
 </html>
